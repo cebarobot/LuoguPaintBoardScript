@@ -3,7 +3,7 @@ from scipy import ndimage
 import re
 import time
 import json
-from urllib import request
+from urllib import requests
 import threading
 import queue
 
@@ -49,7 +49,23 @@ len_col = len(im_array[0])
 
 print(len_row, len_col)
 
+# cookies 
+mycookies = {
+... 'UM_distinctid': '15ff28eb3dbd7-07a2a49a1b07b18-74256751-fa000-15ff28eb3e35',
+... '__client_id': 'aad097a12030c1660ed6a276f6133cc57ed14b68',
+... 'CNZZDATA5476811': 'cnzz_eid%3D1669199593-1495260563-%26ntime%3D1514561910'
+... }
+
 
 # 基础绘画基准
 base_row, base_col = 361, 292
+
+mydata = {
+    'x': 399,
+    'y': 799,
+    'color': '5'
+}
+
+s = requests.Session()
+rr = s.post('https://www.luogu.org/paintBoard/paint', data = mydata, cookies = mycookies)
 

@@ -41,7 +41,7 @@ color = {
 }
 
 # Get gif map info
-im_array = ndimage.imread("ubuntu.png", mode="RGB")
+im_array = ndimage.imread("ref.png", mode="RGB")
 len_row = len(im_array)
 len_col = len(im_array[0])
 
