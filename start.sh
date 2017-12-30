@@ -1,3 +1,3 @@
 #! /bin/sh
 
-python3 make2.py &
+nohup python3 make2.py &
