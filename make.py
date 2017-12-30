@@ -7,8 +7,7 @@ import requests
 import threading
 import queue
 
-color = 
-{
+color = {
     '(0, 0, 0)': '0',
     '(255, 255, 255)': '1',
     '(170, 170, 170)': '2',
@@ -50,29 +49,13 @@ len_col = len(im_array[0])
 
 print(len_row, len_col)
 
-# cookies 
-mycookies = {
-    'UM_distinctid': '160a5a02f1e34c-00a286642c06828-173a7640-e1000-160a5a02f1f5c8',
-    '__client_id': '236f31d4e24a406d3dba65cce3ec5f24da66437a',
-    'CNZZDATA5476811': 'cnzz_eid%3D322944717-1514602952-%26ntime%3D1514602952'
-}
-
-
-# 基础绘画基准
-base_row, base_col = 200, 600
-
-mydata = {
-    'x': 0,
-    'y': 1,
-    'color': '5'
-}
-
-s = requests.Session()
-rr = s.post('https://www.luogu.org/paintBoard/paint', data = mydata, cookies = mycookies)
-print(rr.text)
+arr = [[0 for i in range(len_col)] for i in range(len_row)]
 
 def main():
-    for
+    for i in range(0, len_row):
+        for j in range(0, len_col):
+            arr[i][j] = color[str(tuple(im_array[i][j]))]
+        print(arr[i])
     
 if __name__ == "__main__":
     main()
