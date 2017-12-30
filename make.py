@@ -55,7 +55,7 @@ def main():
     for i in range(0, len_row):
         for j in range(0, len_col):
             arr[i][j] = color[str(tuple(im_array[i][j]))]
-        print(arr[i])
+    print(arr)
     
 if __name__ == "__main__":
     main()
