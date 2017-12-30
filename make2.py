@@ -78,7 +78,7 @@ mycookies = [
 ]
 
 # 基础绘画基准
-base_row, base_col = 275, 650
+base_row, base_col = 275, 635
 
 def getBoard():
     global data
