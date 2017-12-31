@@ -94,9 +94,9 @@ def draw():
     getBoard()
     count = 0
     for i in range(len_row):
-        for j in range(len_col-30):
+        for j in range(len_col):
             print("now at", base_col + j, base_row + i, arr[i][j])
-            if data[base_col + j][base_row + i] != arr[i][j]:
+            if data[base_col + j][base_row + i] != mynum[arr[i][j]]:
                 print("darwing", base_col + j, base_row + i, arr[i][j])
                 mydata = {
                     'x': base_col + j,
