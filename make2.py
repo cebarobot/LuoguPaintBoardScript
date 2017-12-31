@@ -65,7 +65,7 @@ def makechar():
                 if vvvv < mnvl :
                     mnid = k
                     mnvl = vvvv
-            arr[i][j] = mynum[mnid]
+            arr[i][j] = mnid
     print("charpic finished!~")
 
 # cookies 
@@ -89,8 +89,8 @@ def draw():
     getBoard()
     count = 0
     for i in range(len_row):
-        for j in range(len_col):
-            print("now at", base_col + j, base_row + i)
+        for j in range(len_col-30):
+            print("now at", base_col + j, base_row + i, arr[i][j])
             if data[base_col + j][base_row + i] != arr[i][j]:
                 print("darwing", base_col + j, base_row + i, arr[i][j])
                 mydata = {
@@ -102,11 +102,19 @@ def draw():
                 print(ret.text)
                 count = count + 1
                 time.sleep(30 / len(mycookies))
-    
-
+                
 def main():
+    mydata = {
+        'x': base_col + j,
+        'y': base_row + i,
+        'color': arr[i][j]
+    }
+    requests.post('https://www.luogu.org/paintBoard/paint', data = mydata, cookies = mycookies[count % len(mycookies)])
+"""
     makechar()
-    draw()
+    while 1:
+        draw()
+        """
 
 if __name__ == "__main__":
     main()
