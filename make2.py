@@ -75,6 +75,11 @@ mycookies = [
         '__client_id': '236f31d4e24a406d3dba65cce3ec5f24da66437a',
         'CNZZDATA5476811': 'cnzz_eid%3D322944717-1514602952-%26ntime%3D1514602952'
     },
+    {
+        'UM_distinctid': '160aa5948321bb-085f12202a92068-173a7640-e1000-160aa59483338c',
+        '__client_id': 'b33006e68c4874a1aac004132982649aef6339b6',
+        'CNZZDATA5476811': 'cnzz_eid%3D1654760155-1514686276-%26ntime%3D1514686276'
+    }
 ]
 
 # 基础绘画基准
