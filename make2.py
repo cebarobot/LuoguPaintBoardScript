@@ -71,19 +71,7 @@ def makechar():
 # cookies 
 mycookies = [
     {
-        'UM_distinctid': '160a5a02f1e34c-00a286642c06828-173a7640-e1000-160a5a02f1f5c8',
-        '__client_id': '236f31d4e24a406d3dba65cce3ec5f24da66437a',
-        'CNZZDATA5476811': 'cnzz_eid%3D322944717-1514602952-%26ntime%3D1514602952'
-    },
-    {
-        'UM_distinctid': '160aa8c9f23221-03ad5301336f4c-173a7640-e1000-160aa8c9f246b2',
-        '__client_id': 'eb74b4a7f7be8122cbf131f64c09479b1505de8f',
-        'CNZZDATA5476811': 'cnzz_eid%3D1430130365-1514686276-%26ntime%3D1514686276'
-    },
-    {
-        'UM_distinctid': '160aabe4bf1517-09677bae48fc4d-173a7640-e1000-160aabe4bf277f',
-        '__client_id': '36730d73134f9ea40e3efc994b536cfc1a1ce5e1',
-        'CNZZDATA5476811': 'cnzz_eid%3D1293111728-1514689529-https%253A%252F%252Fwww.luogu.org%252F%26ntime%3D1514691734'
+        '__client_id': 'f20a5a6cc00d6463b1d343500a14c6d73f27357f'
     }
 ]
 
