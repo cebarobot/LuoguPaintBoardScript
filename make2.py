@@ -104,17 +104,9 @@ def draw():
                 time.sleep(30 / len(mycookies))
                 
 def main():
-    mydata = {
-        'x': base_col + j,
-        'y': base_row + i,
-        'color': arr[i][j]
-    }
-    requests.post('https://www.luogu.org/paintBoard/paint', data = mydata, cookies = mycookies[count % len(mycookies)])
-"""
     makechar()
     while 1:
         draw()
-        """
 
 if __name__ == "__main__":
     main()
