@@ -82,8 +82,8 @@ mycookies = [
     },
     {
         'UM_distinctid': '160aabe4bf1517-09677bae48fc4d-173a7640-e1000-160aabe4bf277f',
-        '__client_id': 'f0930303998130cbf76d2a6499db1a4dfaec779b',
-        'CNZZDATA5476811': 'cnzz_eid%3D1293111728-1514689529-https%253A%252F%252Fwww.luogu.org%252F%26ntime%3D1514689529'
+        '__client_id': '36730d73134f9ea40e3efc994b536cfc1a1ce5e1',
+        'CNZZDATA5476811': 'cnzz_eid%3D1293111728-1514689529-https%253A%252F%252Fwww.luogu.org%252F%26ntime%3D1514691734'
     }
 ]
 
@@ -109,9 +109,9 @@ def draw():
                     'color': arr[i][j]
                 }
                 ret = requests.post('https://www.luogu.org/paintBoard/paint', data = mydata, cookies = mycookies[count % len(mycookies)])
-                print(ret.text)
+                print(count % len(mycookies), ret.text)
                 count = count + 1
-                time.sleep(30 / len(mycookies))
+                time.sleep(30 // len(mycookies) + 1)
                 
 def main():
     makechar()
