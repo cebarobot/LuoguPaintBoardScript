@@ -79,6 +79,11 @@ mycookies = [
         'UM_distinctid': '160aa8c9f23221-03ad5301336f4c-173a7640-e1000-160aa8c9f246b2',
         '__client_id': 'eb74b4a7f7be8122cbf131f64c09479b1505de8f',
         'CNZZDATA5476811': 'cnzz_eid%3D1430130365-1514686276-%26ntime%3D1514686276'
+    },
+    {
+        'UM_distinctid': '160aabe4bf1517-09677bae48fc4d-173a7640-e1000-160aabe4bf277f',
+        '__client_id': 'f0930303998130cbf76d2a6499db1a4dfaec779b',
+        'CNZZDATA5476811': 'cnzz_eid%3D1293111728-1514689529-https%253A%252F%252Fwww.luogu.org%252F%26ntime%3D1514689529'
     }
 ]
 
